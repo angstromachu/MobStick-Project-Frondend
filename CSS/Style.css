@@ -1,0 +1,275 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: inherit;
+
+}
+
+/* COLORS
+ #440a67
+ #93329e
+ #b4aee8
+ #ffe3fe
+*/
+body {
+
+
+
+    color: rgb(119, 119, 119);
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FFE3FE;
+    /* padding: 25px; */
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgb(3, 1, 9, 0.5), rgb(68, 10, 103, 0.5), rgb(147, 50, 158)),
+        url("https://thumbs.gfycat.com/FixedGivingFreshwatereel-size_restricted.gif");
+    /* url("arcade\ game.jpg"); */
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    position: relative;
+}
+
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.heading-primary {
+    color: rgb(255, 255, 255);
+    backface-visibility: hidden;
+
+
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 140px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    line-height: 1.3em;
+    animation: moveLeft 1s ease-out;
+    font-family: 'Monoton', cursive;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff
+        /* 0 0 40px #fff,
+        0 0 80px #fff, */
+        /* 0 0 90px #fff,
+        0 0 100px #fff,
+        0 0 150px #fff */
+    ;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 42px;
+
+    letter-spacing: 3px;
+    animation: moveInRight 1s ease-out;
+    font-family: 'Bangers', cursive;
+}
+
+/** Header animation**/
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.todo {
+    text-align: center;
+    color: #b4aee8;
+    font-family: 'Bangers', cursive;
+    padding-top: 100px;
+}
+
+.container-flex {
+    height: 100vh;
+    background-color: #ffe3fe;
+
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.boom-boom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 8px;
+    width: 350px !important;
+    padding: 0 !important;
+    margin: 5px !important;
+
+}
+
+.card-title {
+    font-family: 'Monoton', cursive;
+    font-variant: small-caps;
+}
+
+.card-content {
+    font-size: 20px;
+}
+
+
+.game-text {
+    text-align: center;
+    color: #b4aee8;
+    font-family: 'Bangers', cursive;
+    padding-top: 70px;
+
+}
+
+footer {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
+}
+
+.page-footer {
+
+    background-image: linear-gradient(to right bottom, rgb(115, 27, 170), rgb(68, 10, 103, 0.5), rgb(115, 27, 170));
+}
+
+.footer-text {
+    color: #ffe3fe;
+
+}
+
+
+.btn:link,
+.btn:visited {
+    padding: 1rem 5rem !important;
+
+    border-radius: 1rem !important;
+    transition: all .2s !important;
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    height: 60px;
+    font-family: 'Bangers', cursive;
+
+
+}
+
+.btn:hover {
+    /* transform: translateY(-3px); */
+    box-shadow: 0 5px 10px #731BAA !important;
+
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.btn--white {
+    background-color: #731BAA !important;
+    color: #fff !important;
+}
+
+
+/* .btn::after {
+    content: "";
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn--white::after {
+    background-color: #731BAA;
+}
+
+
+.btn:hover::after {
+    transform: scale(1.2);
+    opacity: 0;
+} */
+
+.white-text {
+    font-family: 'Monoton', cursive;
+
+}
+
+.white-para {
+    font-family: 'Farro', sans-serif;
+}
+
+.icons {
+    width: 7vh;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: #b4aee8 !important;
+}
+
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+
+
+/*for header*/
