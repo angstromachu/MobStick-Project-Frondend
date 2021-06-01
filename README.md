@@ -1,1 +1,1 @@
-# MobStick-Project-Frondend
+# MobStick-Project-Landing Page
